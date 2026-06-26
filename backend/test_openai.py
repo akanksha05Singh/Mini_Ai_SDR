@@ -23,10 +23,10 @@ async def test_key():
             max_tokens=10,
             temperature=0.0
         )
-        print(f"✓ SUCCESS! OpenAI API Key is working perfectly.")
+        print(f"[OK] SUCCESS! OpenAI API Key is working perfectly.")
         print(f"Response: {response.choices[0].message.content.strip()}")
     except Exception as e:
-        print(f"✗ FAILED! The key could not complete the request.")
+        print(f"[FAIL] FAILED! The key could not complete the request.")
         print(f"Error: {str(e)}")
 
 if __name__ == "__main__":
